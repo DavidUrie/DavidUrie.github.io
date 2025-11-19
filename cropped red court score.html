@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cropped Embed</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .iframe-crop {
+    width: 600px;      /* visible area width (adjust as needed) */
+    height: 800px;     /* visible area height (adjust as needed) */
+    overflow: hidden;
+    position: relative;
+  }
+  .iframe-crop iframe {
+    width: 1800px;     /* 3× wider to allow cropping to middle third */
+    height: 800px;
+    border: none;
+    transform: translateX(-600px); /* shift left to reveal middle third */
+  }
+</style>
+</head>
+<body>
+<div class="iframe-crop">
+  <iframe src="https://app.overlays.uno/output/5LbkjcMzAQ7MXkkoby3n3X"></iframe>
+</div>
+</body>
+</html>
