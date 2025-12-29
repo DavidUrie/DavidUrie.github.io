@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cropped Embed</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iframe-crop {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .iframe-crop iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Make iframe 3× wider than container */
+    width: 300%;
+    height: 100%;
+
+    /* Shift left by 1/3 to show the center section */
+    transform: translateX(-33.3333%);
+
+    border: none;
+  }
+</style>
+</head>
+<body>
+  <div class="iframe-crop">
+    <iframe
+      src="https://app.overlays.uno/output/5LbkjcMzAQ7MXkkoby3n3X"
+      allowfullscreen
+    ></iframe>
+  </div>
+</body>
+</html>
